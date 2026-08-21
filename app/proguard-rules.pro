@@ -1,0 +1,2 @@
+-keep class org.java_websocket.** { *; }
+-keep class com.rei.monitor.** { *; }
