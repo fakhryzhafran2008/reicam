@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReiCam Live</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>📷 ReiCam</h1>
+        <div class="status">
+            <span id="statusDot" class="dot offline"></span>
+            <span id="statusText">Offline</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="video-container">
+            <video id="video" autoplay muted></video>
+            <div class="controls">
+                <button id="btnRecord">⏺ Record</button>
+                <button id="btnSnapshot">📸 Snapshot</button>
+                <button id="btnSwitch">🔄 Switch</button>
+                <button id="btnFullscreen">⛶ Fullscreen</button>
+            </div>
+        </div>
+        <div class="info-panel">
+            <div class="info-item"><span>Battery:</span> <span id="battery">--</span></div>
+            <div class="info-item"><span>Status:</span> <span id="deviceStatus">--</span></div>
+            <div class="info-item"><span>Camera:</span> <span id="cameraMode">--</span></div>
+            <div class="info-item"><span>FPS:</span> <span id="fps">--</span></div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
